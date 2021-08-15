@@ -1,5 +1,5 @@
-let eqArrays = function (arrOne, arrTwo) {
-  let ans = arrOne.length === arrTwo.length &&
+const eqArrays = function (arrOne, arrTwo) {
+  const ans = arrOne.length === arrTwo.length &&
     arrOne.every(function (element, index) {
       return element === arrTwo[index];
     })
@@ -16,17 +16,16 @@ const assertArrayEqual = function (arrOne, arrTwo) {
 }
 
 const without = function (source, itemsToRemove) {
-  let newArr = source.slice(0);
-  for (let item of itemsToRemove) {
-    for (let i = 0; i < newArr.length; i++) {
-      if (item === newArr[i]) {
-        newArr.splice(i, 1)
-      }
-    }
+  let newArr = [];
 
+  for (const item of source) {
+    if (!itemsToRemove.includes(item)) {
+      newArr.push(item);
+    }
   }
+
   return newArr;
 }
 
-console.log(without(["1", "2", "3"], ["3", "2"])) // expected return:["1", "2"]
+
 
