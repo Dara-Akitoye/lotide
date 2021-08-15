@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@daraakitoye/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lodash clone",
   "main": "assertEqual.js",
   "directories": {
     "test": "test"
@@ -11,16 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dara-Akitoye/lotide.git"
+    "url": "git+https://github.com/daraakitoye/lotide.git"
   },
-  "author": "",
+  "author": "Dara Akitoye (https://github.com/daraakitoye)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dara-Akitoye/lotide/issues"
+    "url": "https://github.com/daraakitoye/lotide/issues"
   },
-  "homepage": "https://github.com/Dara-Akitoye/lotide#readme",
+  "homepage": "https://github.com/daraakitoye/lotide#readme",
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.0.3"
+  },
+  "dependencies": {
+    "lotide": "^1.0.1"
   }
 }
