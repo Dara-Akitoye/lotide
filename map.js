@@ -1,5 +1,5 @@
 const eqArrays = function (arrOne, arrTwo) {
-  let ans = arrOne.length === arrTwo.length &&
+  const ans = arrOne.length === arrTwo.length &&
     arrOne.every(function (element, index) {
       return element === arrTwo[index];
     })
@@ -18,7 +18,7 @@ const words = ["ground", "control", "to", "major", "tom"];
 
 const map = function (array, callback) {
   const results = [];
-  for (let item of array) {
+  for (const item of array) {
     results.push(callback(item));
   }
   return results;

@@ -7,7 +7,7 @@ const assertEqual = function (actual, expected) {
 }
 
 const eqArrays = function (arrOne, arrTwo) {
-  let ans = arrOne.length === arrTwo.length &&
+  const ans = arrOne.length === arrTwo.length &&
     arrOne.every(function (element, index) {
       return element === arrTwo[index];
     })
@@ -17,12 +17,12 @@ const eqArrays = function (arrOne, arrTwo) {
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back false!
 const eqObjects = function (object1, object2) {
-  let arr1 = Object.keys(object1);
-  let arr2 = Object.keys(object2);
+  const arr1 = Object.keys(object1);
+  const arr2 = Object.keys(object2);
   if (arr1.length !== arr2.length) {
     return false;
   }
-  for (let elem of arr1) {
+  for (const elem of arr1) {
     if (Array.isArray(object1[elem]) && Array.isArray(object2[elem])) {
       return eqArrays(object1[elem], object2[elem]);
     }
