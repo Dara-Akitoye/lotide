@@ -13,5 +13,16 @@ describe('#middle', () => {
   });
 });
 
+describe('#middle', () => {
+  it('returns [] for [1]', () => {
+    assert.deepEqual(middle([1]), [])
+  });
+});
+
+describe('#middle', () => {
+  it('returns [] for []', () => {
+    assert.deepEqual(middle([]), [])
+  });
+});
 
 
